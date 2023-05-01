@@ -7,7 +7,7 @@ import data from "./data";
 function App() {
   const cards = data.map((card) => <Card key={card.key} {...card} />);
   return (
-    <div className="min-w-[500px]">
+    <div className="min-w-[500px] min-h-screen">
       <Navbar />
       <main className="flex flex-col items-center max-w-[750px] mx-auto">{cards}</main>
       <Footer />
