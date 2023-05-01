@@ -16,7 +16,7 @@ export default function Card(props) {
     <>
       <section className="flex items-center p-8 gap-8 min-h-[168px] max-w-[750px] text-[#2B283A] font-normal text-xs sm:text-sm">
         <img
-          className="bg-gray-300 object-cover aspect-[2/3] rounded-md w-[144px] h-[216px]"
+          className="bg-gray-300 object-cover aspect-[2/3] rounded-md w-1/4 max-w-[144px]"
           src={imageUrl}
           alt={title}
         />
