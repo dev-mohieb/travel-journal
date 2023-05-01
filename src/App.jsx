@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import data from "./data";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="min-w-[500px]">
       <Navbar />
-      <main className="flex flex-col items-center">{cards}</main>
+      <main className="flex flex-col items-center max-w-[750px] mx-auto">{cards}</main>
+      <Footer />
     </div>
   );
 }
