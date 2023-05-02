@@ -22,7 +22,7 @@ export default function Card(props) {
           alt={title}
         />
         <article>
-          <article className="mb-2 flex items-center sm:mb-3">
+          <article className="mb-3 flex items-center">
             <FontAwesomeIcon
               icon={faLocationDot}
               className="mr-1 text-xs text-[#F55A5A]"
