@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 :root {
-    font-family: Inter, sans-serif;
+  font-family: Inter, sans-serif;
+}
+/* * {
+    border: 1px solid black;
+} */
+hr:last-of-type {
+  display: none;
 }

@@ -14,19 +14,20 @@ export default function Card(props) {
 
   return (
     <>
-      <section className="flex items-center p-8 gap-8 min-h-[168px] max-w-[750px] text-[#2B283A] font-normal text-xs sm:text-sm">
+      <section className="flex max-w-[750px] flex-col p-4 text-xs font-normal text-[#2B283A] sm:p-8 sm:text-sm">
+        <h2 className="mb-2 text-2xl font-bold sm:mb-4 sm:text-3xl">{title}</h2>
         <img
-          className="bg-gray-300 object-cover aspect-[2/3] rounded-md w-1/4 max-w-[144px]"
+          className="mb-2 aspect-[2/1] w-full rounded-md bg-gray-300 object-cover"
           src={imageUrl}
           alt={title}
         />
         <article>
-          <article className="flex items-center mb-1">
+          <article className="mb-2 flex items-center sm:mb-3">
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="text-[#F55A5A] mr-1 text-xs"
+              className="mr-1 text-xs text-[#F55A5A]"
             />
-            <p className=" uppercase tracking-widest mr-3">{location}</p>
+            <p className="mr-3 uppercase tracking-widest">{location}</p>
             <a
               className="text-[#918E9B] underline"
               href={googleMapsUrl}
@@ -34,14 +35,13 @@ export default function Card(props) {
               View on Google Maps
             </a>
           </article>
-          <h2 className=" mb-5 font-bold text-2xl sm:text-3xl">{title}</h2>
-          <p className=" font-bold mb-2">
+          <p className="mb-1 font-bold">
             {startDate} - {endDate}
           </p>
-          <p className=" leading-[150%]">{description}</p>
+          <p className="leading-[150%]">{description}</p>
         </article>
       </section>
-      <hr className=" w-[90%]" />
+      <hr className="w-[90%]" />
     </>
   );
 }
