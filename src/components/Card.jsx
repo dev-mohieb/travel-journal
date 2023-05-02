@@ -17,7 +17,7 @@ export default function Card(props) {
       <section className="flex max-w-[750px] flex-col p-4 text-xs font-normal text-[#2B283A] sm:p-8 sm:text-sm">
         <h2 className="mb-4 text-2xl font-bold sm:mb-4 sm:text-3xl">{title}</h2>
         <img
-          className="mb-2 aspect-[2/1] w-full rounded-md bg-gray-300 object-cover"
+          className="mb-2 aspect-[2/1] w-full rounded-md bg-gray-300 object-cover object-bottom"
           src={imageUrl}
           alt={title}
         />
